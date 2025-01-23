@@ -4,6 +4,14 @@
 
 - Java 11 or higher
 - Maven
+- MySQL
+
+Since the applocatopm uses `spring.jpa.hibernate.ddl-auto=update` all the tables will be created automatically,
+but the schema needs to be created manually.
+
+```sql
+CREATE SCHEMA `movies`;
+```
 
 ### Installation
 
