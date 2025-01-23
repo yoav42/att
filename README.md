@@ -49,3 +49,4 @@ http://localhost:8080/swagger-ui.html
 * Login with customer
 * Buy a ticket with `POST /bookings` with a seat
 * Try to buy the same seat and get a conflict error
+* Keep playing with it :)
