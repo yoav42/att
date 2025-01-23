@@ -30,22 +30,6 @@ CREATE SCHEMA `movies`;
     mvn spring-boot:run
     ```
 
-### API Endpoints
-
-- **User Authentication**
-    - `POST /auth/register` - Register a new user
-    - `POST /auth/login` - Login a user
-
-- **Showtime Management**
-    - `GET /showtimes` - List all showtimes
-    - `POST /showtimes` - Create a new showtime
-    - `PUT /showtimes/{id}` - Update an existing showtime
-    - `DELETE /showtimes/{id}` - Delete a showtime
-
-- **Ticket Booking**
-    - `POST /bookings` - Book a ticket
-
-
 # Notes:
 The `POST /auth/register` endpoint expects a role for the user.
 This is not secure and for testing purpose, so we can create the first ADMIN and CUSTOMER users.
