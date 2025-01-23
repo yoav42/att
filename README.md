@@ -38,3 +38,14 @@ This is not secure and for testing purpose, so we can create the first ADMIN and
 
 Access the Swagger UI for API documentation at:
 http://localhost:8080/swagger-ui.html
+
+### Flow example
+* Create an admin user with `/auth/register`
+* Create a customer user with `/auth/register`
+* Login with the admin user with `/auth/login`
+* Create a movie with `POST /movies`
+* Create a showtime with `POST /showtimes`
+* Try to create another showtime in the same time interval and get a conflict error
+* Login with customer
+* Buy a ticket with `POST /bookings` with a seat
+* Try to buy the same seat and get a conflict error
